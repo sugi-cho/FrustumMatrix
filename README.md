@@ -4,6 +4,8 @@ Rendering window looking into VR space.
 
 ## Capture
 
+![capture](mov.gif)
+
 ![capture](img.jpg)
 
 ## Source
