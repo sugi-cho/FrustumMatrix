@@ -48,22 +48,12 @@ public class VrWindow : MonoBehaviour
 
         meshFilter.sharedMesh = mesh;
 
-        if (output != null && (output.width != width || output.height != height))
-        {
-            output.Release();
-            output = null;
-        }
-        if (output == null)
-            output = new RenderTexture(width, height, 24, RenderTextureFormat.DefaultHDR);
+        output = new RenderTexture(width, height, 24, RenderTextureFormat.DefaultHDR);
+
         var mpb = new MaterialPropertyBlock();
         meshRenderer.GetPropertyBlock(mpb);
         mpb.SetTexture("_MainTex", output);
         meshRenderer.SetPropertyBlock(mpb);
-    }
-
-    private void OnValidate()
-    {
-        SetupRenderer();
     }
 
     private void OnDrawGizmos()
