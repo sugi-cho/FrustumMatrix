@@ -36,7 +36,7 @@ public class VrWindowRenderer : MonoBehaviour
     void Setup()
     {
         window.SetupRenderer();
-        output = cam.targetTexture = window.output;
+        output = window.output;
         onCreateOutput.Invoke(output);
         SetFrustrum();
     }
