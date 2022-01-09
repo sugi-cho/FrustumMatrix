@@ -1,0 +1,7 @@
+{
+    "name": "sugi.frustum",
+    "version": "0.1.0",
+    "displayName": "FrustumMatrix",
+    "description": "generate camera to plane frustum matrix",
+    "unity": "2020.2"
+}
